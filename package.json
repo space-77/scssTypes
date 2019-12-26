@@ -10,13 +10,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onLanguage:scssTypes",
+		"onCommand:extension.scssTypes"
 	],
+	"languages": [{
+		"id": "scssTypes",
+		"extensions": [ ".scss", ".sass" ],
+		"aliases": [ "scss", "sass" ]
+	}],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [{
-			"command": "extension.helloWorld",
-			"title": "Hello World"
+			"command": "extension.scssTypes",
+			"title": "scssTypes"
 		}]
 	},
 	"scripts": {
